@@ -6,11 +6,9 @@ import SearchCoins from '../components/SearchCoins';
 function Home() {
     return (
         <div>
+            <TrendingCoins />
             <InputField />
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-                <TrendingCoins />
-                <SearchCoins />
-            </div>
+            <SearchCoins />
         </div>
     )
 }

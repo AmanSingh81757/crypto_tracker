@@ -40,7 +40,7 @@ const homeStore = create((set) => ({
         const coins = response.data.coins.map((coin) => {
             return {
                 name: coin.item.name,
-                image: coin.item.small,
+                image: coin.item.large,
                 id: coin.item.id,
                 priceBtc: coin.item.price_btc,
             }

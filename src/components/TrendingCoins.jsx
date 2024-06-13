@@ -10,13 +10,15 @@ function TrendingCoins() {
      }, [])
 
     return (
-        <div style={{display: 'block'}}  className=''>
-            <h1>Trending Coins</h1>
-            {store.coins.map((coin) => {
-                return (
-                    <TrendingCoinCard key = {coin.id} {...coin} />
-                )
-            })}
+        <div className='bg-slate-100 p-10'>
+            <h1 className='font-bold text-3xl mb-5'>Trending Coins</h1>
+            <div className='flex gap-5 flex-wrap'>
+                {store.coins.map((coin) => {
+                    return (
+                        <TrendingCoinCard key={coin.id} {...coin} />
+                    )
+                })}
+            </div>
         </div>
     )
 }
